@@ -237,5 +237,10 @@ namespace NgopiSek.App.Context
             DataTable result = queryExecutor(query, parameters);
             return Convert.ToInt32(result.Rows[0][0]) > 0;
         }
+
+        internal static DataTable LoginUser(string text1, string text2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

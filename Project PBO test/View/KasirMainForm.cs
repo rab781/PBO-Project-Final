@@ -46,13 +46,13 @@ namespace Project_PBO_test.View
 
         private void SetupHeader()
         {
-            labelTitle.Text = "Dashboard Admin";
-            labelWelcome.Text = $"Selamat datang, Admin";
+            labelTitle.Text = "Dashboard Kasir";
+            labelWelcome.Text = $"Selamat datang, kasir";
 
             // Set culture ke Indonesia
             CultureInfo culture = new CultureInfo("id-ID");
 
-            timer = new System.Windows.Forms.Timer();
+            var timer = new System.Windows.Forms.Timer();
             timer.Interval = 1000;
             timer.Tick += (s, e) => {
                 labelDateTime.Text = DateTime.Now.ToString("dd MMMM yyyy HH:mm", culture);
@@ -100,19 +100,19 @@ namespace Project_PBO_test.View
             listViewCart.Columns.Add("Subtotal", 120);
         }
 
-        private void btnNewTransaction_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new TransactionForm(currentKasir), "Transaksi Baru");
-        }
+        //private void btnNewTransaction_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new TransactionForm(currentKasir), "Transaksi Baru");
+        //}
 
-        private void btnViewTransactions_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new TransactionHistoryForm(currentKasir), "Riwayat Transaksi");
-        }
+        //private void btnViewTransactions_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new TransactionHistoryForm(currentKasir), "Riwayat Transaksi");
+        //}
 
-        private void btnProfile_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new KasirProfileForm(currentKasir), "Profil Kasir");
+        //private void btnProfile_Click(object sender, EventArgs e)
+        //{
+        //    OpenChildForm(new KasirProfileForm(currentKasir), "Profil Kasir");
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

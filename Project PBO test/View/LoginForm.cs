@@ -34,7 +34,7 @@ namespace Project_PBO_test
                 this.Show();
             }
         }
-        private void buttonLogin_Click(object sender, EventArgs e)
+        private void buttonLogin_Click_1(object sender, EventArgs e)
         {
             if (ValidateInput())
             {
@@ -94,7 +94,7 @@ namespace Project_PBO_test
             }
             return true;
         }
-        private void linkLabelRegister_Click(object sender, EventArgs e)
+        private void linkLabelRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (comboBoxRole.SelectedItem.ToString() == "Kasir")
             {

@@ -20,7 +20,7 @@ namespace Project_PBO_test.View
             InitializeComponent();
         }
 
-        private void buttonRegister_Click(object sender, EventArgs e)
+        private void buttonRegister_Click_1(object sender, EventArgs e)
         {
             if (ValidateInput())
             {
