@@ -21,7 +21,7 @@ namespace Project_PBO_test.App.Models
         public int id_produk { get; set; }
         [Required]
         public int kuantitas { get; set; }
+        [Required]
+        public int harga { get; set; }
     }
-
-
 }

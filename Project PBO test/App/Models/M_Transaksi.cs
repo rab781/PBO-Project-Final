@@ -21,5 +21,7 @@ namespace Project_PBO_test.App.Models
         [Required]
         [ForeignKey("MetodePembayaran")]
         public int id_metode_pembayaran { get; set; }
+        [Required]
+        public int total { get; set; }
     }
 }

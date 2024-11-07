@@ -69,5 +69,10 @@ namespace Project_PBO_test.App.Context
             }
             return null;
         }
+
+        public static DataTable Login(string text, string s)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

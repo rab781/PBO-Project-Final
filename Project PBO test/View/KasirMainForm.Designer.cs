@@ -33,8 +33,6 @@
             labelWelcome = new Label();
             labelDateTime = new Label();
             listViewProducts = new ListView();
-            panelMenu.SuspendLayout();
-            SuspendLayout();
             // 
             // panelMenu
             // 
